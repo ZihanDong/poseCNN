@@ -1,0 +1,9 @@
+python train_sub_sampled_beta.py 1
+python train_sub_sampled_beta.py 10
+python train_sub_sampled_beta.py 100
+python train_sub_sampled_abs_sub.py
+python train_sub_sampled_new_loss.py
+python train_sub_sampled_new_CNN.py
+python train_sub_sampled_loss_CNN.py
+
+pause
