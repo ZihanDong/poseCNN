@@ -7,7 +7,7 @@ We have provided the step-by-step procedure for model training, testing and eval
 Download the "Cleaned" data category from DTU-MVS dataset to your local path (138GB). (http://roboimagedata2.compute.dtu.dk/data/MVS/Cleaned.zip)
 
 ## Preprocess (optional but recommended)
-This step will preprocess all the image (shrink and crop) and store them in another path with same file name and index.  Using the pre-processed images(224*224) could save a lot of memory space comparing to load/process original size images(1600*1200) while training.  As tested, around 4 GB memory is enough to load all the image samples (original size 138GB), which means we can avoid reading image from disk and thus make the training/testing much faster.
+This step will preprocess all the image (shrink and crop) and store them in another path with same file name and index.  Using the pre-processed images(224x224) could save a lot of memory space comparing to load/process original size images(1600x1200) while training.  As tested, around 4 GB memory is enough to load all the image samples (original size 138GB), which means we can avoid reading image from disk and thus make the training/testing much faster.
 
 To perform preprocess, modify the directory and new\_dir in "down_sample_images.py" to the path for full size dataset and the location where you want to store the preprocessed images, also using the start and end index to specify the categories you want to be pre-processed, then run the script.
 
